@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.helloandroid.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/elearning5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/elearning5" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_above="@id/free"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:src="@drawable/udacity4" />
+    <TextView
+        android:id="@+id/free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/elearning5"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:background="#03a9f4"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:textAllCaps="true"
+        android:text="Free online courses and Nanodegrees" />
+  <LinearLayout
+        android:id="@+id/llayout1"
+        android:layout_below="@id/free"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Android\nDeveloper" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/androiddev1" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/webdev2" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Web\nDeveloper" />
+  </LinearLayout>
+  <LinearLayout
+        android:id="@+id/llayout2"
+        android:layout_below="@id/llayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="VR\nDeveloper" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/vrdev1" />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ba1" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Business\nAnalyst" />
+  </LinearLayout>
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/llayout2"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:text="...and so much more..." />
+    <LinearLayout
+        android:id="@+id/llayout3"
+        android:layout_below="@id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/u" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Udacity" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/phone" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="650-555-5555" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/llayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/address"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="2465 Latham St\nMountain View, CA 94043" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/www" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="www.udacity.com" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
