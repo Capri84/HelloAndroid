@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.helloandroid.MainActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
+
  <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="0dp"
-     android:orientation="vertical">
-    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -26,7 +27,7 @@
             android:layout_above="@id/free"
             android:paddingBottom="8dp"
             android:paddingLeft="8dp"
-            android:scaleType="centerInside"
+            android:scaleType="center"
             android:src="@drawable/udacity4" />
         <TextView
             android:id="@+id/free"
@@ -44,99 +45,117 @@
             android:textStyle="bold"
             android:text="@string/free" />
     </RelativeLayout>
-    <LinearLayout
+
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="8"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
         <TextView
             style="@style/text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="right"
+            android:layout_gravity="center_vertical"
             android:text="@string/androiddev" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
             android:src="@drawable/androiddev1" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
             android:src="@drawable/webdev2" />
         <TextView
             style="@style/text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
             android:text="@string/webdev" />
-    </LinearLayout>
-        <LinearLayout
+     </LinearLayout>
+
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="8"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:orientation="horizontal">
         <TextView
             style="@style/text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="right"
+            android:layout_gravity="center_vertical"
             android:text="@string/vrdev" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
             android:src="@drawable/vrdev1" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
             android:src="@drawable/ba1" />
         <TextView
             style="@style/text1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
             android:text="@string/ba" />
-    </LinearLayout>
-            <TextView
-                style="@style/text1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:gravity="center"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/more" />
-    <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
-            android:layout_marginRight="26dp"
-            android:layout_marginBottom="26dp"
-            android:orientation="vertical">
-            <TextView
-                style="@style/text2"
-                android:text="@string/udacity" />
-            <TextView
-                style="@style/text2"
-                android:gravity="right"
-                android:text="@string/address"
-                android:autoLink="map"/>
-            <TextView
-                style="@style/text2"
-                android:text="@string/phone"
-                android:autoLink="phone"/>
-            <TextView
-                style="@style/text2"
-                android:text="@string/url"
-                android:autoLink="web"/>
-        </LinearLayout>
+     </LinearLayout>
+
+     <TextView
+        style="@style/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="@string/more" />
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#03a9f4"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="20dp"/>
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#03a9f4" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="@string/udacity"
+            style="@style/text2"/>
+        <TextView
+            android:autoLink="map"
+            android:gravity="right"
+            android:text="@string/address"
+            style="@style/text2"/>
+        <TextView
+            android:autoLink="phone"
+            android:text="@string/phone"
+            style="@style/text2"/>
+        <TextView
+            android:autoLink="web"
+            android:text="@string/url"
+            style="@style/text2"/>
+     </LinearLayout>
  </LinearLayout>
 </ScrollView>
