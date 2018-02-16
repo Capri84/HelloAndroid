@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingBottom">8dp</dimen>
+    <dimen name="paddingLeft">8dp</dimen>
+    <dimen name="paddingTop">8dp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="layout_marginTop">20dp</dimen>
+    <dimen name="layout_marginBottom">20dp</dimen>
+    <dimen name="layout_marginTop1">10dp</dimen>
+    <dimen name="layout_marginBottom1">15dp</dimen>
+    <dimen name="layout_height">2dp</dimen>
+    <dimen name="layout_marginBottom2">3dp</dimen>
+    <dimen name="layout_marginTop2">16dp</dimen>
+    <dimen name="layout_marginBottom3">16dp</dimen>
+</resources>

@@ -5,9 +5,9 @@
     <string name="webdev">Web\nDeveloper</string>
     <string name="vrdev">VR\nDeveloper</string>
     <string name="ba">Business\nAnalyst</string>
-    <string name="more">...and so much more...</string>
+    <string name="more">&#8230;and so much more&#8230;</string>
     <string name="udacity">Udacity</string>
-    <string name="phone">650-555-5555</string>
+    <string name="phone">650&#8211;555&#8211;5555</string>
     <string name="address">2465 Latham St\nMountain View, CA 94043</string>
     <string name="url">www.udacity.com</string>
 </resources>

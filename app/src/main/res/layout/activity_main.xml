@@ -1,161 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.helloandroid.MainActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
- <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    tools:context="com.example.android.helloandroid.MainActivity">
 
-     <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/elearning5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            android:src="@drawable/elearning5" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/free"
-            android:paddingBottom="8dp"
-            android:paddingLeft="8dp"
-            android:scaleType="center"
-            android:src="@drawable/udacity4" />
-        <TextView
-            android:id="@+id/free"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/elearning5"
-            android:background="#03a9f4"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:textAllCaps="true"
-            android:textColor="#ffffff"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:text="@string/free" />
-    </RelativeLayout>
-
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
-        <TextView
-            style="@style/text1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:layout_gravity="center_vertical"
-            android:text="@string/androiddev" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/androiddev1" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1.5"
-            android:src="@drawable/webdev2" />
-        <TextView
-            style="@style/text1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="2"
-            android:text="@string/webdev" />
-     </LinearLayout>
-
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp"
-        android:orientation="horizontal">
-        <TextView
-            style="@style/text1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:layout_gravity="center_vertical"
-            android:text="@string/vrdev" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1.5"
-            android:src="@drawable/vrdev1" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1.5"
-            android:src="@drawable/ba1" />
-        <TextView
-            style="@style/text1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="2"
-            android:text="@string/ba" />
-     </LinearLayout>
-
-     <TextView
-        style="@style/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:text="@string/more" />
-     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#03a9f4"
-        android:layout_marginBottom="3dp"
-        android:layout_marginTop="20dp"/>
-     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#03a9f4" />
-
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/elearning5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/elearning5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/free"
+                android:paddingBottom="@dimen/paddingBottom"
+                android:paddingLeft="@dimen/paddingLeft"
+                android:scaleType="center"
+                android:src="@drawable/udacity4" />
+
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elearning5"
+                android:background="@color/colorBackground"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="@dimen/paddingBottom"
+                android:paddingTop="@dimen/paddingTop"
+                android:text="@string/free"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/androiddev" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:src="@drawable/androiddev1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:src="@drawable/webdev2" />
+
+            <TextView
+                style="@style/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/webdev" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_marginBottom1"
+            android:layout_marginTop="@dimen/layout_marginTop1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/vrdev" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:src="@drawable/vrdev1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:src="@drawable/ba1" />
+
+            <TextView
+                style="@style/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="@string/ba" />
+        </LinearLayout>
+
         <TextView
-            android:text="@string/udacity"
-            style="@style/text2"/>
-        <TextView
-            android:autoLink="map"
-            android:gravity="right"
-            android:text="@string/address"
-            style="@style/text2"/>
-        <TextView
-            android:autoLink="phone"
-            android:text="@string/phone"
-            style="@style/text2"/>
-        <TextView
-            android:autoLink="web"
-            android:text="@string/url"
-            style="@style/text2"/>
-     </LinearLayout>
- </LinearLayout>
+            style="@style/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/more"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginBottom="@dimen/layout_marginBottom2"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:background="@color/colorBackground" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:background="@color/colorBackground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_marginBottom3"
+            android:layout_marginTop="@dimen/layout_marginTop2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text2"
+                android:text="@string/udacity" />
+
+            <TextView
+                style="@style/text2"
+                android:autoLink="map"
+                android:gravity="right"
+                android:text="@string/address" />
+
+            <TextView
+                style="@style/text2"
+                android:autoLink="phone"
+                android:text="@string/phone" />
+
+            <TextView
+                style="@style/text2"
+                android:autoLink="web"
+                android:text="@string/url" />
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
